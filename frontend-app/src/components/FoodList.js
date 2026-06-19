@@ -6,7 +6,7 @@ function FoodList({ cart, setCart }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/food")
+      .get("https://foodie-mern-app.onrender.com/api/food")
       .then((res) => {
         setFoods(res.data);
       })

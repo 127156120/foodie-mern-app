@@ -4,7 +4,7 @@ function Orders() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/orders")
+    fetch("https://foodie-mern-app.onrender.com/api/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
